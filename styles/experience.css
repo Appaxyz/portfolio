@@ -1,0 +1,113 @@
+/*Navigation Bar Animations, Color, and etc*/
+a:link, a:visited {
+    background-color:#DCDCDC;
+    color:black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 650ms;
+    transition-delay: 50ms;
+    margin:0 250px;
+  }
+  /*Navigation Bar Hover Color*/
+  a:hover, a:active {
+    background-color:rgb(175, 238, 232);
+  }
+
+/*Font Size and Page Color*/
+body {
+    font-family:'Roboto', sans-serif;
+    background-color: #2e4a62;
+}
+
+/*Page Title*/
+  #experience{
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 29px;
+    text-decoration: underline;
+  }
+/*Experience Photo*/
+  #exp{
+    margin-left: 0.3%;
+    margin-bottom: -3%;
+  }
+/*Experience Photo Caption*/
+  #cap5{
+    font-size: 10px;
+    color:black;
+    font-weight: bold;
+  }
+
+/*Experience Header*/
+  #head{
+    text-decoration: underline;
+  }
+
+/*Experience Text Box*/
+  #first{
+    padding: 10px;
+    border: black solid ;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width:70% ;
+    float: right;
+    font-size: 25px;
+    margin-top: -365px;
+    text-align: center;
+  }
+
+/*Programs Header Underline*/
+#title{
+  text-decoration: underline;
+}
+
+/*Text Box for List*/
+  #list{
+    padding: 10px;
+    border: black solid ;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width:17% ;
+    float: left;
+    font-size: 25px;
+    margin-top: 202.5px;
+    text-align: center;
+    margin-left: 290px;
+  }
+/*Photo of Code*/
+  #code{
+    margin-top: 219.7px;
+    margin-left: 1050px;
+    
+  }
+
+/*Caption of Code Photo*/
+  #cap6{
+    font-size: 10px;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 550px;
+  }
+
+/*Plans for The Future Text Box*/  
+  #future{
+    padding: 10px;
+    border: black solid ;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width:70% ;
+    font-size: 25px;
+    margin-top: 120px;
+    position: relative;
+    margin-left: 14%;
+    text-align: center;
+  }
+/*Plans For The Future Header Underline*/
+  #plans{
+    text-decoration: underline;
+  }
+

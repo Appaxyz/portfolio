@@ -1,0 +1,106 @@
+/*Navigation Bar Animations,Color, ETC*/
+a:link, a:visited {
+    background-color:#DCDCDC;
+    color:black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 650ms;
+    transition-delay: 50ms;
+    margin:0 250px;
+  }
+/*Navigation Bar hover color*/
+
+  a:hover, a:active {
+    background-color:rgb(175, 238, 232);
+  }
+
+/*Font and Page Color*/
+  body {
+    font-family:'Roboto', sans-serif;
+    background-color: #2e4a62;
+}
+
+/*Page Title*/
+  #Assignments{
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 29px;
+    text-decoration: underline;
+  }
+
+/*Assignments Photo*/
+  #one{
+
+    text-align: center;
+
+  }
+
+/*Caption for Assignments Photo*/
+  #cap4{
+    font-size: 10px;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+  }
+
+/*Underlining Assingments Header*/
+  #underline{
+    text-decoration: underline;
+  }
+
+/*Text Box for Assignments explanation*/
+  #first{
+    padding: 10px;
+    border: black solid ;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    width:70% ;
+    font-size: 25px;
+    margin-top: -5px;
+    text-align: center;
+    margin-left: 260px;
+  }
+
+/*Assignment Buttons*/
+  .button{
+    background-color:black; 
+    border:none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 30px; 
+    display: inline-block;
+    color: white;
+  }
+
+/*Left Side of Buttons*/
+  #left{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -19px;
+  }
+/*Right Side of Buttons*/
+  #right{
+    margin-left: 60px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    }
+/*Placing Text in Center of Buttons*/
+    #line{
+      text-align: center;
+    }
+/*Makes color of button change when hovering*/
+    .button:hover, a:active {
+      background-color:rgb(175, 238, 232);
+    }
+
+

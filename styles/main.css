@@ -1,0 +1,132 @@
+/*Navigation Bar CSS*/
+a:link, a:visited {
+    background-color:#DCDCDC;
+    color:black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 650ms;
+    transition-delay: 50ms;
+    margin:0 250px;
+  }
+
+/*Changes color of Nav Bar when hovered over*/
+  a:hover, a:active {
+    background-color:rgb(175, 238, 232);
+  }
+
+  
+/*Page Title*/
+  #Home{
+    position: relative;
+    text-align: center;
+    color: white;
+    right: 29px;
+    text-decoration: underline;
+  }
+/*Background and Font for entire page*/
+  body {
+    font-family:'Roboto', sans-serif;
+    background-color: #2e4a62;
+}
+
+/*Sizing of Welcome Image*/
+
+#pic1{
+  margin-left: 0.3%;
+  margin-bottom: -3%;
+
+}
+
+/*Caption for Welcome Image*/
+#cap1{
+  font-size: 10px;
+  color:black;
+  margin-top: 52px;
+  font-weight: bold;
+}
+
+/*Header for Intro Paragraph*/
+
+#header_1{
+  text-decoration: underline;
+}
+
+/*Intro paragraph text-box*/
+#intro{
+  padding: 10px;
+  border: black solid ;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  width:70% ;
+  float: right;
+  font-size: 25px;
+  margin-top: -280px;
+  text-align: center;
+}
+
+/*Sizing of About Me Photo*/
+#pic2{
+  margin:0 78%; 
+  
+}
+
+/*Caption for About Me Paragraph*/
+#cap2{
+  font-size: 10px;
+  color:black;
+  font-weight: bold;
+  float:right
+}
+
+/*Header for About Me paragraph*/
+#header_2{
+  text-decoration: underline;
+
+}
+
+/*Textbox for About Me Paragraph*/
+#about{
+  padding: 10px;
+  border: black solid ;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  width:70% ;
+  float: left;
+  font-size: 25px;
+  margin-top: -329px;
+  text-align: center;
+}
+
+/*Sizing and Movement of Math Photo*/
+#pic3{
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+/*Font and Size of Math Photo Caption*/
+#cap3{
+  font-size: 10px;
+  color:black;
+  font-weight: bold;
+  margin-left:150px ;
+}
+
+/*Positioning and Sizing of Spotify Playlist*/
+#pic4{
+  margin-top: -363px;
+  position: relative;
+  margin-left: 1050px;
+}
+/*Spotify Playlist Caption*/
+
+#playlist{
+  font-size: 10px;
+  color:black;
+  font-weight: bold;
+  position: relative;
+  margin-left: 1050px;
+}
+
+
