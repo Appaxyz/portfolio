@@ -1,5 +1,17 @@
 function fun_1(){
-    alert('Assignment 1 Coming Soon')
+    let num1 = parseInt(prompt("Enter the first number: "));
+    let num2 =  parseInt(prompt("Enter the second number: "));
+    let output = ""
+    if (num1 > num2){
+    output = num1;
+    } else if (num1 == num2){
+    output = "The numbers entered are equal";
+    } else if (num2 > num1){
+    output = num2;
+    } else {
+    output = "Invalid Output";
+    }
+    document.getElementById("largerNum").innerHTML = output;
 }
 
 function fun_2(){
