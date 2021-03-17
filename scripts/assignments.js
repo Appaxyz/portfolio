@@ -9,7 +9,7 @@ function fun_1(){
     } else if (num2 > num1){
     output = num2;
     } else {
-    output = "Invalid Output";
+    output = "Invalid Input";
     }
     document.getElementById("largerNum").innerHTML = output;
 }
