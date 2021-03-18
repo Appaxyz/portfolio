@@ -15,15 +15,38 @@ function fun_1(){
 }
 
 function fun_2(){
-    alert('Assignment 2 Coming Soon')
+    var a = parseInt(prompt("Enter a number"));
+    var b = parseInt(prompt("Enter a number"));
+    var c = parseInt(prompt("Enter a number"));
+    let total = a*b*c
+    if (total > 0){
+        document.getElementById("signOfProduct").innerHTML = "The sign of the product is +";
+    } else if(total < 0){
+        document.getElementById("signOfProduct").innerHTML = "The sign of the product is -";
+
+    }else{
+        document.getElementById("signOfProduct").innerHTML = "Invalid Input"
+    }
 }
 
 function fun_3(){
-    alert('Assignment 3 Coming Soon')
+    var a = parseInt(prompt("Enter a number"));
+    var b = parseInt(prompt("Enter a number"));
+    var c = parseInt(prompt("Enter a number"));
+    let list = [a,b,c]
+    let sorted = list.sort()
+    document.getElementById("threeNumberSort").innerHTML = sorted
 }
 
 function fun_4(){
-    alert('Assignment 4 Coming Soon')
+    let sum = 0;
+    for(let i = 0; i<1000; i++){
+        
+        if(i%3===0){
+            sum = sum + i
+        }
+    }
+    document.getElementById("forSumThrees").innerHTML = sum
 }
 
 function fun_5(){
