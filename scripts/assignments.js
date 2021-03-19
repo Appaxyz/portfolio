@@ -60,15 +60,37 @@ document.getElementById("whileSumThrees").innerHTML = sum
 }
 
 function fun_6(){
-    alert('Assignment 6 Coming Soon')
+    for(let i=0; i<=100; i++){
+       if(i%4===0){
+            console.log('Four')
+        }
+      if(i%10===0){
+            console.log('Ten')
+        }
+      if(i%4===0 && i%10===0){
+            console.log('TenFour')
+        }
+    }
 }
 
 function fun_7(){
-    alert('Assignment 7 Coming Soon')
+    let year = parseInt(prompt("Enter a Year"));
+    century = Math.floor((year-1)/100) + 1;
+    document.getElementById("centuryFromYear").innerHTML = century
 }
 
 function fun_8(){
-    alert('Assignment 8 Coming Soon')
+    var a = parseInt(prompt("Enter one angle of a triangle"));
+    var b = parseInt(prompt("Enter another angle of a triangle "));
+    let add = a+b
+    if(add<180){
+        let missing = 180-add
+        document.getElementById("thirdAngle").innerHTML = 'The missing angle is ' + missing
+    }else if(add>180){
+        document.getElementById("thirdAngle").innerHTML = 'Invalid angle values'
+    }else{
+        document.getElementById("thirdAngle").innerHTML = 'Invalid Input'
+    }
 }
 
 function fun_9(){
