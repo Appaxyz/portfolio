@@ -50,7 +50,13 @@ function fun_4(){
 }
 
 function fun_5(){
-    alert('Assignment 5 Coming Soon')
+    let total = 0;
+    let i = 0;
+    while(i<1000){
+        i=i+3
+        sum=sum+i
+    }
+document.getElementById("whileSumThrees").innerHTML = sum
 }
 
 function fun_6(){
