@@ -1,4 +1,4 @@
-function fun_1(){
+function largerNum(){
     let num1 = parseInt(prompt("Enter the first number: "));
     let num2 =  parseInt(prompt("Enter the second number: "));
     let output = ""
@@ -14,7 +14,7 @@ function fun_1(){
     document.getElementById("largerNum").innerHTML = output;
 }
 
-function fun_2(){
+function signOfProduct(){
     var a = parseInt(prompt("Enter a number"));
     var b = parseInt(prompt("Enter a number"));
     var c = parseInt(prompt("Enter a number"));
@@ -29,7 +29,7 @@ function fun_2(){
     }
 }
 
-function fun_3(){
+function threeNumberSort(){
     var a = parseInt(prompt("Enter a number"));
     var b = parseInt(prompt("Enter a number"));
     var c = parseInt(prompt("Enter a number"));
@@ -38,7 +38,7 @@ function fun_3(){
     document.getElementById("threeNumberSort").innerHTML = sorted
 }
 
-function fun_4(){
+function forSumThrees(){
     let sum = 0;
     for(let i = 0; i<1000; i++){
         
@@ -49,17 +49,17 @@ function fun_4(){
     document.getElementById("forSumThrees").innerHTML = sum
 }
 
-function fun_5(){
+function whileSumThrees(){
     let total = 0;
     let i = 0;
     while(i<1000){
         i=i+3
-        sum=sum+i
+        total=total+i
     }
-document.getElementById("whileSumThrees").innerHTML = sum
+document.getElementById("whileSumThrees").innerHTML = total
 }
 
-function fun_6(){
+function tenFour(){
     for(let i=0; i<=100; i++){
        if(i%4===0){
             console.log('Four')
@@ -73,13 +73,13 @@ function fun_6(){
     }
 }
 
-function fun_7(){
+function centuryFromYear(){
     let year = parseInt(prompt("Enter a Year"));
     century = Math.floor((year-1)/100) + 1;
     document.getElementById("centuryFromYear").innerHTML = century
 }
 
-function fun_8(){
+function thirdAngle(){
     var a = parseInt(prompt("Enter one angle of a triangle"));
     var b = parseInt(prompt("Enter another angle of a triangle "));
     let add = a+b
