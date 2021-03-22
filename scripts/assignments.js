@@ -11,7 +11,7 @@ function largerNum(){
     } else {
     output = "Invalid Input";
     }
-    document.getElementById("largerNum").innerHTML = output;
+    document.getElementById("largerNum").innerHTML = 'The Largest Number Is ' + output;
 }
 
 function signOfProduct(){
@@ -35,7 +35,7 @@ function threeNumberSort(){
     var c = parseInt(prompt("Enter a number"));
     let list = [a,b,c]
     let sorted = list.sort()
-    document.getElementById("threeNumberSort").innerHTML = sorted
+    document.getElementById("threeNumberSort").innerHTML = "The Correct Order Is: " + sorted
 }
 
 function forSumThrees(){
@@ -76,7 +76,7 @@ function tenFour(){
 function centuryFromYear(){
     let year = parseInt(prompt("Enter a Year"));
     century = Math.floor((year-1)/100) + 1;
-    document.getElementById("centuryFromYear").innerHTML = century
+    document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'th Century'
 }
 
 function thirdAngle(){
