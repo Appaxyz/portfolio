@@ -1,3 +1,4 @@
+// Function that compares two numbers and returns the largest//
 function largerNum(){
     let num1 = parseInt(prompt("Enter the first number: "));
     let num2 =  parseInt(prompt("Enter the second number: "));
@@ -13,7 +14,7 @@ function largerNum(){
     }
     document.getElementById("largerNum").innerHTML = 'The Largest Number Is ' + output;
 }
-
+//Function which displays the sign of the sum of 3 numbers//
 function signOfProduct(){
     var a = parseInt(prompt("Enter a number"));
     var b = parseInt(prompt("Enter a number"));
@@ -29,6 +30,7 @@ function signOfProduct(){
     }
 }
 
+//Function that takes input of three numbers and returns it in order of least to greatest//
 function threeNumberSort(){
     var a = parseInt(prompt("Enter a number"));
     var b = parseInt(prompt("Enter a number"));
@@ -37,7 +39,7 @@ function threeNumberSort(){
     let sorted = list.sort()
     document.getElementById("threeNumberSort").innerHTML = "The Correct Order Is: " + sorted
 }
-
+//Function that for loops all multiples of three under 1000 and adds them//
 function forSumThrees(){
     let sum = 0;
     for(let i = 0; i<1000; i++){
@@ -48,17 +50,18 @@ function forSumThrees(){
     }
     document.getElementById("forSumThrees").innerHTML = sum
 }
-
+// Function that uses a while loop to add all multiples of 3 under 1000//
 function whileSumThrees(){
     let total = 0;
     let i = 0;
     while(i<1000){
+        total+=i
         i=i+3
-        total=total+i
     }
 document.getElementById("whileSumThrees").innerHTML = total
 }
 
+// Function that checks all the multiples of 4 and 10 under 100 using if statements//
 function tenFour(){
     for(let i=0; i<=100; i++){
        if(i%4===0){
@@ -73,12 +76,14 @@ function tenFour(){
     }
 }
 
+//Function that returns the century a inputted year is in//
 function centuryFromYear(){
     let year = parseInt(prompt("Enter a Year"));
     century = Math.floor((year-1)/100) + 1;
     document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'th Century'
 }
 
+// Function that returns the missing angle of a triangle by substracting two givens from 180//
 function thirdAngle(){
     var a = parseInt(prompt("Enter one angle of a triangle"));
     var b = parseInt(prompt("Enter another angle of a triangle "));
