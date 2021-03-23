@@ -36,8 +36,8 @@ function threeNumberSort(){
     var b = parseInt(prompt("Enter a number"));
     var c = parseInt(prompt("Enter a number"));
     let list = [a,b,c]
-    let sorted = list.sort()
-    document.getElementById("threeNumberSort").innerHTML = "The Correct Order Is: " + sorted
+    numArray = list.sort((a, b) => a - b);
+    document.getElementById("threeNumberSort").innerHTML = "The Correct Order Is: " + list
 }
 //Function that for loops all multiples of three under 1000 and adds them//
 function forSumThrees(){
