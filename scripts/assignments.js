@@ -37,7 +37,7 @@ function threeNumberSort(){
     var c = parseInt(prompt("Enter a number"));
     let list = [a,b,c]
     numArray = list.sort((a, b) => a - b);
-    document.getElementById("threeNumberSort").innerHTML = "The Correct Order Is: " + list
+    document.getElementById("threeNumberSort").innerHTML = "The Correct Order Is: " + numArray
 }
 //Function that for loops all multiples of three under 1000 and adds them//
 function forSumThrees(){
@@ -80,7 +80,13 @@ function tenFour(){
 function centuryFromYear(){
     let year = parseInt(prompt("Enter a Year"));
     century = Math.floor((year-1)/100) + 1;
-    document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'th Century'
+    century = String(century)
+    differential = century[century.length -1]
+    if (century>11 && differential==1){
+    document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'st Century'
+    } else{
+        document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'th Century'
+    }
 }
 
 // Function that returns the missing angle of a triangle by substracting two givens from 180//
