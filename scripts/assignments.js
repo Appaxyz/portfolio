@@ -82,8 +82,10 @@ function centuryFromYear(){
     century = Math.floor((year-1)/100) + 1;
     century = String(century)
     differential = century[century.length -1]
-    if (century>11 && differential==1){
+    if (century!=11 && differential==1){
     document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'st Century'
+    }else if(century !=12 && differential==2){
+        document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'nd Century'
     } else{
         document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'th Century'
     }
