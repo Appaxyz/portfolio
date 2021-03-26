@@ -86,6 +86,8 @@ function centuryFromYear(){
     document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'st Century'
     }else if(century !=12 && differential==2){
         document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'nd Century'
+    }else if(century!=13 && differential==3){
+        document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'rd Century'
     } else{
         document.getElementById("centuryFromYear").innerHTML = 'That Year Is In The ' + century + 'th Century'
     }
