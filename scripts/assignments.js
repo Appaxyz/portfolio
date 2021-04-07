@@ -108,13 +108,50 @@ function thirdAngle(){
     }
 }
 
-function fun_9(){
-    alert('Assignment 9 Coming Soon')
+function encryptor(){
+  
+   let initial = prompt('Please Enter Your Message') 
+   let cipher = ''
+   let messageList = initial.split(" ");
+   for(let i=0; i<messageList.length; i=i+1){  
+       if(messageList[i].length<2){
+        method_1 = messageList[i][0].replace(messageList[i][0], Math.floor(Math.random() * 90 + 10)).toUpperCase(); 
+
+        method_2 = messageList[i].slice(-1).replace("", "/");
+    
+        cipher += messageList[i].slice(1, -1) + method_1+ method_2 + "*" +Math.floor(Math.random() * 100) + ' ' ; 
+       }if(messageList[i].length>=2){
+        method_1 = messageList[i][0].replace('', Math.floor(Math.random() * 90 + 10)).toUpperCase(); 
+
+        method_2 = messageList[i].slice(-1).replace("", "/");
+    
+        cipher += messageList[i].slice(1, -1) + method_1+ method_2 + "*" +Math.floor(Math.random() * 100) + ' ' ; 
+       }
+   }
+   document.getElementById("encryptor").innerHTML = cipher
 }
 
 
-function fun_10(){
-    alert('Assignment 10 Coming Soon')
+function decryptor(){
+    let cipher_text = prompt('Please Input Your Encrypted Text')
+    let decrpyt = ''
+    let base = cipher_text.split(" ")
+    for(let i = 0; i<base.length; i=i+1){
+        
+        slash = base[i].replace(/[0-9]/g, '')
+        asterik = slash.replace('/', '')
+        method_3 = asterik.replace('*','')
+
+        secondL = method_3.charAt(method_3.length - 2)
+        method_3 = method_3.replace("",secondL)
+        lastLetter = method_3.charAt(method_3.length - 1)
+        finalized = method_3.substring(0,method_3.length - 2)
+        decrpyt = finalized.toLowerCase() + lastLetter.toLowerCase()
+        document.getElementById("decryptor").innerHTML = 'Check Console'
+        console.log(decrpyt)
+
+ 
+    }
+    console.log('----------------------------Message End----------------------------')
+
 }
-
-
