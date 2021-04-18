@@ -112,20 +112,22 @@ function encryptor(){
   
    let initial = prompt('Please Enter Your Message') 
    let cipher = ''
-   let messageList = initial.split(" ");
+   let messageList = initial.split(" "); // Splits plain text message by word
    for(let i=0; i<messageList.length; i=i+1){  
-       if(messageList[i].length<2){
-        method_1 = messageList[i][0].replace(messageList[i][0], Math.floor(Math.random() * 90 + 10)).toUpperCase(); 
+       
+    if(messageList[i].length<2){ //Checks if the message length is only 1 letter
+        method_1 = messageList[i][0].replace(messageList[i][0], Math.floor(Math.random() * 90 + 10)).toUpperCase(); // replaces the first letter of each word with a random 2 digit number
 
-        method_2 = messageList[i].slice(-1).replace("", "/");
+        method_2 = messageList[i].slice(-1).replace("", "/"); // adds a slash before each final letter
     
-        cipher += messageList[i].slice(1, -1) + method_1+ method_2 + "*" +Math.floor(Math.random() * 100) + ' ' ; 
-       }if(messageList[i].length>=2){
-        method_1 = messageList[i][0].replace('', Math.floor(Math.random() * 90 + 10)).toUpperCase(); 
+        cipher += method_1+ method_2 + "*" +Math.floor(Math.random() * 100) + ' ' ; // compiles the cipher consisting of the random number, slash, one letter message, an asterik, and another random number
 
-        method_2 = messageList[i].slice(-1).replace("", "/");
+       }if(messageList[i].length>=2){ //Checks if the message length is more than only 1 letter
+        method_1 = messageList[i][0].replace('', Math.floor(Math.random() * 90 + 10)).toUpperCase(); //makes the first letter of each word with a random 2 digit number
+
+        method_2 = messageList[i].slice(-1).replace("", "/"); //Takes the last letter of each word and adds a / in front
     
-        cipher += messageList[i].slice(1, -1) + method_1+ method_2 + "*" +Math.floor(Math.random() * 100) + ' ' ; 
+        cipher += messageList[i].slice(1, -1) + method_1 + method_2 + "*" +Math.floor(Math.random() * 100) + ' ' ; // collects the cipher consisting of all the letters in the word except the beginning and last, a random 2 digit number as well as the first letter, the word's final letter with a slash in front followed by a asterik and another random number  
        }
    }
    document.getElementById("encryptor").innerHTML = cipher
@@ -135,20 +137,20 @@ function encryptor(){
 function decryptor(){
     let cipher_text = prompt('Please Input Your Encrypted Text')
     let decrpyt = ''
-    let base = cipher_text.split(" ")
-    for(let i = 0; i<base.length; i=i+1){
+    let base = cipher_text.split(" ") // Splits cipher by word/spaces
+    for(let i = 0; i<base.length; i=i+1){ //For loop that will decrypt each ciphered word saved in base
         
-        slash = base[i].replace(/[0-9]/g, '')
-        asterik = slash.replace('/', '')
-        method_3 = asterik.replace('*','')
+        slash = base[i].replace(/[0-9]/g, '')//Removes all numbers present in the cipher
+        asterik = slash.replace('/', '') // Removes all slashes present in the cipher
+        method_3 = asterik.replace('*','') // Removes all asterik present in the cipher
 
-        secondL = method_3.charAt(method_3.length - 2)
-        method_3 = method_3.replace("",secondL)
-        lastLetter = method_3.charAt(method_3.length - 1)
-        finalized = method_3.substring(0,method_3.length - 2)
-        decrpyt = finalized.toLowerCase() + lastLetter.toLowerCase()
+        secondL = method_3.charAt(method_3.length - 2) // Grabs second last letter of the cipher (Represents first letter of decrypted)
+        method_3 = method_3.replace("",secondL) //Places second last letter at the beginning
+        lastLetter = method_3.charAt(method_3.length - 1) // Grabs last letter of the cipher
+        finalized = method_3.substring(0,method_3.length - 2) // Combines all letters up until last letter into finalized variable
+        decrpyt = finalized.toLowerCase() + lastLetter.toLowerCase() // Adds final letter to the end of all the other decrypted letters
         document.getElementById("decryptor").innerHTML = 'Check Console'
-        console.log(decrpyt)
+        console.log(decrpyt) // Logs each decrypted word to the console
 
  
     }
